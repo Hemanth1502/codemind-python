@@ -1,14 +1,14 @@
 n = int(input())
 a = str(n)
-c = len(a)
-add = 0
+b = len(a)
 temp = n
+SOS = 0
 while(n):
     d = n%10
-    add = add+d**c
+    SOS = SOS + d**b
     n = n//10
-    c-=1
-if(temp == add):
+    b-=1
+if(SOS==temp):
     print(True)
 else:
     print(False)
