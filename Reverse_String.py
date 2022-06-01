@@ -1,3 +1,6 @@
 n = input()
-x = n[ : :-1]
-print(x)
+a = n.split()
+b = list(a)
+c = b[::-1]
+d = ' '.join(c)
+print(d)
