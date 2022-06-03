@@ -8,17 +8,18 @@ def prime(n):
     else:
         return 0
 n = int(input())
+temp = n
 if prime(n):
-    temp = n
     c = 0
-    dc = 0
-    while(n):
-        d = n%10
-        n = n//10
-        dc = dc + 1
-        if prime(d):
+    a = list(str(n))
+    s = len(a)
+    for i in range(0,s):
+        x = int(a[i])
+        if prime(x):
             c = c + 1
-    if c == dc:
+        else:
+            continue
+    if c == s:
         print('Mega Prime')
     else:
         print('Not Mega Prime')
