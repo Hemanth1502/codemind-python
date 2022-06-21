@@ -1,6 +1,7 @@
 x, y = map(int, input().split())
 a = list(map(int, input().split()))
 b = list(map(int, input().split()))
+count = 0
 c = []
 for i in a:
     if i not in c:
