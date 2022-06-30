@@ -6,7 +6,7 @@ for i in s:
         continue
 a = []
 for i in s:
-    if s.count(i)==1:
+    if i not in a:
         a.append(i)
     else:
         continue
