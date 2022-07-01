@@ -1,17 +1,14 @@
 n = int(input())
 a = list(map(int, input().split()))
-c = []
+c = 0
+b = []
 for i in range(n):
     if a[i]>=0:
-        x = str(a[i])
-        x1 = list(x)
-        k = len(x1)
-        c.append(k)
+        x = len(list(str(a[i])))
+        b.append(x)
     elif a[i]<0:
-        x = str(a[i])[1::]
-        x1 = list(x)
-        k = len(x1)
-        c.append(k)
-    else:
-        continue
-print(*c)
+        y = list(str(a[i]))
+        y1 = y[1:]
+        x = len(y1)
+        b.append(x)
+print(*b)
