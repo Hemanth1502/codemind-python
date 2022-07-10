@@ -1,9 +1,9 @@
 n = int(input())
 a = list(map(int, input().split()))
-c = 0
+b = []
 for i in range(n):
-    if i==0 or i%2==0:
-        c = c + a[i]
+    if i%2==0:
+        b.append(a[i])
     else:
         continue
-print(c)
+print(sum(b))
