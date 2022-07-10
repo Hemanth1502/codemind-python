@@ -1,3 +1,2 @@
-r = int(input())
-Area = (3.14)*(r**2)
-print(Area)
+n = int(input())
+print(3.14*(n**2))
