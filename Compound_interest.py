@@ -1,4 +1,3 @@
-p,r,t=map(int,input().split( ))
-x = (1 + (r/100))**t
-C = p*x
-print("%.2f"%C)
+P, R, T = map(int, input().split())
+CI = P*((1+(R/100))**T)
+print('%0.2f'%CI)
