@@ -1,9 +1,7 @@
 n = int(input())
 a = list(map(int, input().split()))
-c = 0
+b = []
 for i in range(n):
     if a[i]%2==0:
-        c = c + a[i]
-    else:
-        continue
-print(c)
+        b.append(a[i])
+print(sum(b))
