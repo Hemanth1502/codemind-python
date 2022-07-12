@@ -1,18 +1,25 @@
+def sd(n):
+    temp = n
+    n = list(str(n))
+    c = 0
+    for i in range(len(n)):
+        n[i]=int(n[i])
+    for i in range(len(n)):
+        if n[i]!=0:
+            if temp%n[i]==0:
+                c = c+1
+        else:
+            continue
+    if c==len(n):
+        return 1
+    else:
+        return 0
 a = int(input())
 b = int(input())
-r = 0
-c = 0
-for i in range (a, b+1):
-    I=i
-    dc = 0
-    c = 0
-    while(i):
-        d = i%10
-        i = i//10
-        dc = dc+1
-        if d == 0:
-            continue
-        if I%d == 0:
-                c = c + 1
-    if dc == c:
-        print(I, end= ' ')
+c = []
+for i in range(a, b+1):
+    if sd(i):
+        c.append(i)
+    else:
+        continue
+print(*c)
