@@ -1,14 +1,16 @@
 a = int(input())
 b = int(input())
-c = 0
-d = 0
-for i in range (1,a):
-    if(a%i==0):
-        c = c+i
-for j in range(1,b):
-    if(b%j==0):
-        d = d+j
-if(c==b and d==a):
+s1 = []
+for i in range(1, a):
+    if a%i==0:
+        s1.append(i)
+s2 = []
+for i in range(1, b):
+    if b%i==0:
+        s2.append(i)
+if sum(s1)==b and sum(s2)==a:
     print('Amicable')
 else:
     print('Not Amicable')
+# print(s1)
+# print(s2)
