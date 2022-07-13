@@ -1,12 +1,12 @@
 m, n = map(int, input().split())
 a = [list(map(int, input().split())) for i in range(m)]
-c = 0
-d = 0
+e = []
+o = []
 for i in range(len(a)):
-    x = list(a[i])
+    x = a[i]
     for i in range(len(x)):
         if x[i]%2==0:
-            c = c+x[i]
+            e.append(x[i])
         else:
-            d = d+x[i]
-print(c, d)
+            o.append(x[i])
+print(sum(e), sum(o))
