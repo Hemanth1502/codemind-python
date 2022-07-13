@@ -1,9 +1,12 @@
 n = int(input())
 a = 0
 b = 1
-for i in range(1,n+1):
-    print(a,end=' ')
+s = []
+while(True):
+    s.append(a)
     c = a+b
     a = b
     b = c
-    
+    if len(s)>=n:
+        break
+print(*s)
