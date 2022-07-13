@@ -1,9 +1,9 @@
 n = int(input())
-c = 0
+s = []
 for i in range(1,n):
-    if(n%i==0):
-        c = c+i
-if(c>n):
-    print(True)
+    if n%i==0:
+        s.append(i)
+if sum(s)>n:
+    print('True')
 else:
-    print(False)
+    print('False')
