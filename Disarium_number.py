@@ -1,14 +1,11 @@
-n = int(input())
-a = str(n)
-b = len(a)
-temp = n
-SOS = 0
-while(n):
-    d = n%10
-    SOS = SOS + d**b
-    n = n//10
-    b-=1
-if(SOS==temp):
-    print(True)
+a = int(input())
+n = list(str(a))
+c = 0
+for i in range(len(n)):
+    n[i]=int(n[i])
+for i in range(len(n)):
+    c = c+(n[i]**(i+1))
+if a==c:
+    print('True')
 else:
-    print(False)
+    print('False')
