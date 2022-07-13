@@ -1,9 +1,8 @@
 n = int(input())
-a = 0
-for i in range(1,n+1):
-    if(i*(i+1)==n):
-        a = 1
-if a==1:
-    print('YES')
-else:
+f = 0
+for i in range(n):
+    if i*(i+1)==n:
+        print('YES')
+        f = 1
+if f==0:
     print('NO')
