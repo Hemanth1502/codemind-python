@@ -1,29 +1,27 @@
 def palindrome(n):
-    temp = n
-    r = 0
-    while(n):
-        d = n%10
-        r = r*10+d
-        n = n//10
-    if r == temp:
+    k = int(str(n)[::-1])
+    if k==n:
         return 1
     else:
         return 0
 n = int(input())
-a = []
-a.append(n)
-for i in range (1,2*n):
+i = n+1
+while(True):
     if palindrome(i):
-        a.append(i)
+        p1 = i
+        break
     else:
-        continue
-g = set(a)
-x = list(sorted(g))
-d = x.index(n)
-if abs(x[d]-x[d+1])==abs(x[d-1]-x[d]):
-    print(x[d-1],x[d+1])
+        i = i+1
+j = n-1
+while(True):
+    if palindrome(j):
+        p2 = j
+        break
+    else:
+        j = j-1
+if abs(p1-n)>abs(p2-n):
+    print(p2)
+elif abs(p1-n)==abs(p2-n):
+    print(min(p1, p2), max(p1, p2))
 else:
-    if abs(x[d]-x[d+1])>abs(x[d-1]-x[d]):
-        print(int(x[d-1]))
-    else:
-        print(int(x[d+1]))
+    print(p1)
