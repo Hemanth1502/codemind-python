@@ -1,10 +1,5 @@
-n = int(input())
-a = str(n)
-b = list(a)
-c = len(b)
-d = set(a)
-e = len(d)
-if(c==e):
-    print('Unique Number')
+n = list(str(input()))
+if len(n)!=len(set(n)):
+    print('Not Unique Number')
 else:
-    print("Not Unique Number")
+    print('Unique Number')
