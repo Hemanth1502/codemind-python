@@ -6,8 +6,4 @@ for i in range(n):
         c = c+1
     elif a == sorted(a)[::-1]:
         c = c+1
-    # elif a[::-1]==sorted(a):
-    #     c = c+1
-    # elif a[::-1]==sorted(a)[::-1]:
-    #     c = c+1
 print(c)
