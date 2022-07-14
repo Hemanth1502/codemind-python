@@ -9,10 +9,6 @@ for i in range(n):
     for j in range(m):
         c.append(x[j][i])
     b.append(c)
-# y = []
-# for i in range(len(b)):
-#     y.append(sum(b[i]))
-# print(sum(y))
 count = 0
 for i in range(len(b)):
     if b[i]==sorted(b[i]):
