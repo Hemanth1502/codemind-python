@@ -8,6 +8,6 @@ for i in range(len(a)):
     else:
         continue
 if len(c)>0:
-    print(*c)
+    print(*(c))
 else:
     print(-1)
