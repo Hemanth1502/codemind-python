@@ -5,5 +5,5 @@ for i in range(len(a)):
     if a[i]%2==0:
         break
     else:
-        c = c + a[i]
+        c = c+a[i]
 print(c)
