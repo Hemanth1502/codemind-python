@@ -1,28 +1,15 @@
-x, y = map(int, input().split())
-a = list(map(int, input().split()))
-b = list(map(int, input().split()))
-count = 0
+n1, n2 = map(int, input().split())
+a1 = list(map(int, input().split()))
+a2 = list(map(int, input().split()))
 c = []
-for i in a:
-    if i not in c:
+for i in a1:
+    if i not in a2:
         c.append(i)
-    else:
-        continue
-d = []
-for i in b:
-    if i not in d:
-        d.append(i)
-    else:
-        continue
-e = []
+for i in a2:
+    if i not in a1:
+        c.append(i)
+b = []
 for i in c:
-    if i not in d:
-        e.append(i)
-    else:
-        continue
-for i in d:
-    if i not in c:
-        e.append(i)
-    else:
-        continue
-print(*e)
+    if i not in b:
+        b.append(i)
+print(*b)
