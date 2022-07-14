@@ -1,8 +1,5 @@
 n = int(input())
 a = list(map(int, input().split()))
-b = []
-for i in range(n):
-    x = str(a[i])
-    x = int(x[::-1])
-    b.append(x)
-print(*b)
+for i in range(len(a)):
+    a[i]=int(str(a[i])[::-1])
+print(*a)
