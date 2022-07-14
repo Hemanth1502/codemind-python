@@ -1,13 +1,12 @@
 n = int(input())
 a = list(map(int, input().split()))
-k = len(a)
-if k%2==0:
-    k = k
+if n%2!=0:
+    k=n//2 + 1
+    a.insert(k,0)
 else:
-    k = k+1
-    a.insert(k//2,0)
+    k = n//2
 b = []
-for i in range(k//2):
+for i in range(k):
     b.append(a[i])
-    b.append(a[-(1+i)])
+    b.append(a[len(a)-(i+1)])
 print(*b)
