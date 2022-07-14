@@ -7,7 +7,4 @@ for i in range(len(a)):
         c.append(a[i])
     else:
         continue
-if len(c)>0:
-    print(sum(c))
-else:
-    print(-1)
+print(sum(c))
