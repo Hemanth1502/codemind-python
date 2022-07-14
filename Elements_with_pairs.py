@@ -1,11 +1,7 @@
 n = int(input())
 a = list(map(int, input().split()))
-b = []
 if n%2==0:
-    for i in range(len(a)):
-        b.append(a[i])
+    print(*a)
 else:
-    for i in range(len(a)):
-        b.append(a[i])
-    b.append(0)
-print(*b)
+    a.append(0)
+    print(*a)
