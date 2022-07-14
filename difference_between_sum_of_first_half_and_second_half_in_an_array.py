@@ -1,18 +1,5 @@
 n = int(input())
 a = list(map(int, input().split()))
-if n%2==0:
-    k = n//2
-else:
-    k = n//2
-if len(a)%2==0:
-    b = a[0:k]
-    c = a[k:]
-    s1 = sum(b)
-    s2 = sum(c)
-    print(abs(s1-s2))
-else:
-    b = a[0:k]
-    c = a[k:]
-    s1 = sum(b)
-    s2 = sum(c)
-    print(abs(s1-s2))
+a1 = a[0:(n//2)]
+a2 = a[(n//2):]
+print(abs(sum(a1)-sum(a2)))
