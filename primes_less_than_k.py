@@ -8,9 +8,7 @@ n = int(input())
 a = list(map(int, input().split()))
 k = int(input())
 c = 0
-for i in range(n):
-    if prime(a[i]) and a[i]!=1 and a[i]<=k:
-        c = c+1
-    else:
-        continue
+for i in range(len(a)):
+    if prime(a[i]) and a[i]<=k and a[i]!=1:
+        c=c+1
 print(c)
