@@ -1,19 +1,13 @@
 n = int(input())
 a = list(map(int, input().split()))
 x, y = map(int, input().split())
-c = []
+s = []
 for i in range(len(a)):
     if a[i]>=x and a[i]<=y:
-        c.append(a[i])
-    else:
         continue
-d = []
-for i in a:
-    if i not in c:
-        d.append(i)
     else:
-        continue
-if len(d)>0:
-    print(min(d))
+        s.append(a[i])
+if len(s)>0:
+    print(min(s))
 else:
-    print(-1)
+    print('-1')
