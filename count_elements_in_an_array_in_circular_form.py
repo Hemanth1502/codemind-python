@@ -2,8 +2,7 @@ n = int(input())
 b = list(map(int, input().split()))
 a = []
 a.append(b[n-1])
-for i in range(len(b)):
-    a.append(b[i])
+a = a + b
 a.append(b[0])
 c = 0
 for i in range(len(a)-1):
