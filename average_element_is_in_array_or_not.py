@@ -1,11 +1,7 @@
 n = int(input())
 a = list(map(int, input().split()))
-b = (sum(a)//n)
-f = 0
-for i in range(n):
-    if a[i]==b:
-        f = 1
-if f == 1:
+avg = sum(a)//n
+if avg in a:
     print('True')
 else:
-    print('False')
+    print(False)
