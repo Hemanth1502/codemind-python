@@ -1,16 +1,11 @@
-def even(n):
-    if n%2==0 or n==0:
-        return 1
-    else:
-        return 0
 n = int(input())
 a = list(map(int, input().split()))
 c = 0
 for i in range(len(a)):
-    if even(a[i]) and even(i):
+    if (a[i])%2==0 and (i)%2==0:
         c = 0
     else:
-        if even(a[i]) and i!=even:
+        if (a[i])%2==0 and i%2!=0:
             c = c+1
         else:
             continue
