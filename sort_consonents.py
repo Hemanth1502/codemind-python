@@ -1,0 +1,37 @@
+s = list(str(input()))
+# print(s)
+a = []
+b = []
+for i in range(len(s)):
+    if s[i] in 'aeiouAEIOU' or s[i]==' ':
+        a.append(s[i])
+    else:
+        a.append('0')
+# print(a)
+for i in range(len(s)):
+    if s[i] in 'aeiouAEIOU':
+        b.append('0')
+    else:
+        b.append(s[i])
+# print(b)
+c = []
+for i in b:
+    if i=='0':
+        b.remove(i)
+b = ''.join(b).split()
+for i in range(len(b)):
+    b[i]=''.join(sorted(list(b[i])))
+b = list(''.join(b))
+for i in b:
+    if i=='0':
+        b.remove(i)
+j= 0
+for i in range(len(a)):
+    if a[i]=='0':
+        a[i]=b[j]
+        j = j+1
+    else:
+        continue
+a = ''.join(a)
+print(a)
+# print(b)
