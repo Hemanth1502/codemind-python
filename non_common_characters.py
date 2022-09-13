@@ -23,5 +23,4 @@ for i in s2:
         a.append(i)
     else:
         continue
-a = ''.join(sorted(a))
-print(a)
+print(''.join(sorted(a)))
