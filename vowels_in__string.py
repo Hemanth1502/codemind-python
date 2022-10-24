@@ -1,18 +1,13 @@
-s = input()
-c = ['a','e','i','o','u','A','E','I','O','U']
-d = []
+s = list(str(input()))
+a=[]
 for i in s:
-    if i in c:
-        d.append(i)
-    else:
-        continue
-e = []
-for i in d:
-    if i not in e:
-        e.append(i)
-    else:
-        continue
-if len(e)>0:
-    print(*e)
+    if i in 'aeiouAEIOU':
+        a.append(i)
+if len(a)>0:
+    b=[]
+    for i in a:
+        if i not in b:
+            b.append(i)
+    print(*b)
 else:
     print(-1)
