@@ -1,1 +1,1 @@
-print(*list(input().split())[::-1])
+print(*str(input()).split()[::-1])
