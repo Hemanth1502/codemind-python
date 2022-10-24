@@ -1,4 +1,4 @@
-n = input().split()
-for i in range(len(n)):
-    n[i]=n[i][::-1]
-print(*n)
+s = str(input()).split()
+for i in range(len(s)):
+    s[i]=s[i][::-1]
+print(*s)
