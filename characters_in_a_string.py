@@ -1,1 +1,1 @@
-print(len(list(input())))
+print(len(str(input())))
