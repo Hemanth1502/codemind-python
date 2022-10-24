@@ -1,8 +1,5 @@
-n = input().split()
-x = list(n)
-a = []
-for i in range(len(x)):
-    x1 = list(x[i])
-    x2 = len(x1)
-    a.append(x2)
-print(max(a)) 
+s = str(input()).split()
+a=[]
+for i in s:
+    a.append(len(i))
+print(max(a))
