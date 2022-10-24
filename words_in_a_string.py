@@ -1,3 +1,1 @@
-n = input().split()
-x = list(n)
-print(len(x))
+print(len(str(input()).split()))
