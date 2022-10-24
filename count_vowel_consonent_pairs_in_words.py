@@ -1,12 +1,23 @@
-s = (str(input()).lower()).split()
-c = []
-for i in range(len(s)):
-    x = list(s[i])
-    for i in range(len(x)//2):
-        if x[i] in 'aeiou' and x[len(x)-(i+1)] not in 'aeiou':
-            c.append((x[i],x[len(x)-(i+1)]))
-        elif x[i] not in 'aeiou' and x[len(x)-(i+1)] in 'aeiou':
-            c.append((x[i],x[len(x)-(i+1)]))
+def vowel(s):
+    for i in s:
+        if i in 'aeiouAEIOU':
+            return 1
+    else:
+        return 0
+def con(s):
+    for i in s:
+        if i in 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ':
+            return 1
+    else:
+        return 0
+s = str(input()).split()
+# print(s)
+k = len(s)
+c = 0 
+for i in s:
+    for j in range(len(i)):
+        if vowel(i[j]) and con(i[len(i)-(j+1)]):
+            c=c+1
         else:
             continue
-print(len(c))
+print(c)
