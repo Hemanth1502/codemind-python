@@ -1,5 +1,5 @@
-s = str(input()).lower()
+s=str(input()).lower()
 if s[::-1]==s:
-    print(True)
+    print('True')
 else:
-    print(False)
+    print('False')
