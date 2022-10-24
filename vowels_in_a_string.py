@@ -1,6 +1,6 @@
-s = input()
+s = str(input())
 k = input()
-v = ['a','e','i','o','u','A','E','I','O','U']
+v = 'aeiouAEIOU'
 if k in s:
     print(True)
     print(s.index(k))
